@@ -7,9 +7,10 @@ const config: Phaser.Types.Core.GameConfig = {
     type: AUTO,
     backgroundColor: '#1d1d1d',
     scale: {
-        mode: Scale.RESIZE,
-        width: '100%',
-        height: '100%'
+        mode: Scale.FIT,
+        autoCenter: Scale.CENTER_BOTH,
+        width: 1280,
+        height: 720
     },
     scene: [
         MainScene

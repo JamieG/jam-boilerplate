@@ -1,6 +1,6 @@
 # Jam Boilerplate
 
-A minimal browser game boilerplate using **Phaser 4**, **TypeScript** (strict mode) and **Vite**. It renders "Hello World" centred on a responsive canvas — nothing more.
+A minimal browser game boilerplate using **Phaser 4**, **TypeScript** (strict mode) and **Vite**. It renders "Hello World" centred on a 1280×720 canvas that scales to fit the window while preserving aspect ratio — nothing more.
 
 ## Setup
 
@@ -33,5 +33,6 @@ src/scenes/         Game scenes (MainScene.ts renders "Hello World")
 
 ## Configuration
 
-- **Background colour**: edit `backgroundColor` in [src/main.ts](src/main.ts).
+- **Background colour**: edit `backgroundColor` in [src/main.ts](src/main.ts) and the matching `background-color` in [index.html](index.html) (used for the letterbox area).
+- **Game size / aspect ratio**: edit `width` and `height` in the `scale` config in [src/main.ts](src/main.ts). The canvas scales to fit the window (`Scale.FIT`) and stays centred (`Scale.CENTER_BOTH`).
 - **Adding scenes**: create a file in `src/scenes/` and register it in the `scene` array in [src/main.ts](src/main.ts).
